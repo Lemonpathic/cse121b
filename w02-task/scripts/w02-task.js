@@ -10,8 +10,7 @@ let altProfilePicture = 'images/placeholder.png';
 
 let singleFood = 'Chicken Legs';
 let foodArray = ['Chicken', 'Chicken Tenders', 'Chicken Nuggies', "Chicken Fingers", "Chicken Wings", "Chicken Breast"];
-foodArray.push(singleFood);
-foodArray.shift();
+
 
 
 
@@ -29,7 +28,14 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = `${currentYear}`;
 profileElement.setAttribute('src', profilePicture);
 profileElement.setAttribute('alt', altProfilePicture);
-foodElement.innerText = `${foodArray.join(", ")}`;
+foodElement.innerText = `${foodArray.join(", ")} \n`;
+foodArray.push(singleFood);
+foodElement.innerText += `${foodArray.join(", ")} \n`;
+foodArray.shift();
+foodElement.innerText += `${foodArray.join(", ")} \n`;
+foodArray.pop();
+foodElement.innerText += `${foodArray.join(", ")} \n`;
+
 
 
 
