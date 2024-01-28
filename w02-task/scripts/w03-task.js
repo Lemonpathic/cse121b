@@ -61,17 +61,50 @@ document.querySelector("#divideNumbers").addEventListener("click", divideNumbers
 
 
 /* Decision Structure */
+function isMemberYN(subtotal){
+    const isMember = document.querySelector("#member");
+    if (isMember.checked){
+        return total = subtotal * .8
+    }
+    else{
+        return total = subtotal;
+    }
+}
 
+function getTotal(){
+    let subtotal = Number(document.querySelector("#subtotal").value);
+    let total = isMemberYN(subtotal);
+    let formattedTotal = total.toFixed(2);
+    document.querySelector("#total").innerHTML = `$ ${formattedTotal}`
+
+}
+
+document.querySelector("#getTotal").addEventListener("click", getTotal);
 
 /* ARRAY METHODS - Functional Programming */
+
 /* Output Source Array */
+let numberArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+document.querySelector("#array").innerHTML = numberArray.join(", ");
 
 /* Output Odds Only Array */
+let oddNumbers = numberArray.filter(function(number){
+    return number % 2 !== 0;
+})
+document.querySelector("#odds").innerHTML = oddNumbers.join(", ");
 
 /* Output Evens Only Array */
-
+let evenNumbers = numberArray.filter(function(number){
+    return number % 2 === 0;
+})
+document.querySelector("#evens").innerHTML = oddNumbers.join(", ");
 /* Output Sum of Org. Array */
-
+let sumArray = numberArray.reduce((sum,number) => sum + number);
+document.querySelector("#sumOfArray").innerHTML = sumArray;
 /* Output Multiplied by 2 Array */
+let productArray = numberArray.map(number => number * 2);
+document.querySelector("#multiplied").innerHTML = productArray;
 
 /* Output Sum of Multiplied by 2 Array */
+let sumOfM2 = productArray.reduce((sum, number) => sum + number);
+document.querySelector("#sumOfMultiplied").innerHTML = sumOfM2;
