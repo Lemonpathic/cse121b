@@ -51,7 +51,7 @@
       "volume": "newtestament"
     },
     {
-      "book": "psalm",
+      "book": "psalms",
       "chapter": "24",
       "verse": "3",
       "volume": "oldtestament"
@@ -83,7 +83,7 @@
       "volume": "oldtestament"
     },
     {
-      "book": "psalm",
+      "book": "psalms",
       "chapter": "8",
       "verse": "3",
       "volume": "oldtestament"
@@ -197,13 +197,13 @@
       "volume": "oldtestament"
     },
     {
-      "book": "psalm",
+      "book": "psalms",
       "chapter": "51",
       "verse": "7",
       "volume": "oldtestament"
     },
     {
-      "book": "psalm",
+      "book": "psalms",
       "chapter": "147",
       "verse": "16",
       "volume": "oldtestament"
@@ -235,7 +235,7 @@
   ],
   "thunderstorm": [
     {
-      "book": "psalm",
+      "book": "psalms",
       "chapter": "29",
       "verse": "3",
       "volume": "oldtestament"

@@ -22,6 +22,7 @@ const subcategories = {
 
 
 let main = async () => {
+    resetScreen()
     let weather = await callWeather();
     let category = getWeatherCategory(weather)
     setTheTheme(category);
@@ -93,10 +94,17 @@ const getScripture = async (category) => {
     let response = await fetch(url)
     let data = await response.json();
     let verse = data.chapter.verses[scriptureSelection.verse-1].text
-
+    document.querySelector("#scripture").style.display = "flex"
     return verse;
 
 
+}
+const resetScreen = () =>{
+    if (document.querySelector("#current-weather")){
+        document.querySelector("#current-weather").remove();
+        document.querySelector("#scripture").style.display = "none";
+
+    }
 }
 // const getWeather = async () => {
 //     const response = await fetch("https://api.weatherapi.com/v1/current.json?key=e0549634366b4e43ab7160742241102&q=21157&aqi=no")
