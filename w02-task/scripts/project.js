@@ -21,15 +21,21 @@ const subcategories = {
 };
 
 
-let main = async () => {
+let main = async (zipCode) => {
     resetScreen()
-    let weather = await callWeather();
+    let weather = await callWeather(zipCode);
     let category = getWeatherCategory(weather)
     setTheTheme(category);
 
 }
-let callWeather = async () =>{
-    let zip = getZip()
+let callWeather = async (zipCode) =>{
+    let zip;
+    if (zipCode == null){
+        zip = getZip()
+    }
+    else{
+        zip = zipCode;
+    }
     let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e0549634366b4e43ab7160742241102&q=${zip}&aqi=no"`)
     let data = await response.json();
     let text = data.current.condition.text;
@@ -95,15 +101,30 @@ const getScripture = async (category) => {
     let data = await response.json();
     let verse = data.chapter.verses[scriptureSelection.verse-1].text
     document.querySelector("#scripture").style.display = "flex"
+
+    let extendedScriptures = [];
+    scriptures[category].forEach(function (reference){
+        extendedScriptures.push(reference["reference"])
+    })
+
+    let scriptureList = document.querySelector("#scripture-list")
+    scriptureList.style.display = "block"
+    let scriptureListSpan = document.createElement("span")
+    scriptureListSpan.id = "scripture-extensions"
+    scriptureListSpan.innerText = `[ ${extendedScriptures.join(", ")} ]`
+    scriptureList.appendChild(scriptureListSpan)
+    console.log(extendedScriptures)
     return verse;
 
 
 }
+
 const resetScreen = () =>{
     if (document.querySelector("#current-weather")){
         document.querySelector("#current-weather").remove();
         document.querySelector("#scripture").style.display = "none";
-
+        document.querySelector("#scripture-list").style.display = "none";
+        document.querySelector("#scripture-extensions").remove();
     }
 }
 // const getWeather = async () => {
@@ -114,4 +135,8 @@ const resetScreen = () =>{
 // }
 //
 // getWeather()
-document.querySelector("#zipButton").addEventListener("click", main);
+document.querySelector("#zipButton").addEventListener("click", function () {
+    main(null)});
+document.querySelector("#rexburg").addEventListener("click", function () {
+    main(83440)
+});

@@ -4,37 +4,43 @@
       "book": "malachi",
       "chapter": "4",
       "verse": "2",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Malachi 4:2"
     },
     {
       "book": "matthew",
       "chapter": "17",
       "verse": "2",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Matthew 17:2"
     },
     {
       "book": "revelation",
       "chapter": "1",
       "verse": "16",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Revelation 1:16"
     },
     {
       "book": "alma",
       "chapter": "5",
       "verse": "40",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 5:40"
     },
     {
       "book": "alma",
       "chapter": "38",
       "verse": "9",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 38:9"
     },
     {
       "book": "3nephi",
       "chapter": "11",
       "verse": "11",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "3Nephi 11:11"
     }
   ],
   "clear": [
@@ -42,37 +48,43 @@
       "book": "1john",
       "chapter": "1",
       "verse": "9",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "1John 1:9"
     },
     {
       "book": "matthew",
       "chapter": "5",
       "verse": "8",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Matthew 5:8"
     },
     {
       "book": "psalms",
       "chapter": "24",
       "verse": "3",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "psalms 24:3"
     },
     {
       "book": "alma",
       "chapter": "7",
       "verse": "21",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 7:21"
     },
     {
       "book": "3nephi",
       "chapter": "12",
       "verse": "8",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "3Nephi 12:8"
     },
     {
       "book": "moroni",
       "chapter": "10",
       "verse": "32",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Moroni 10:32"
     }
   ],
   "cloudy": [
@@ -80,37 +92,43 @@
       "book": "genesis",
       "chapter": "1",
       "verse": "1",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Genesis 1:1"
     },
     {
       "book": "psalms",
       "chapter": "8",
       "verse": "3",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "psalms 8:3"
     },
     {
       "book": "isaiah",
       "chapter": "40",
       "verse": "26",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Isaiah 40:26"
     },
     {
       "book": "alma",
       "chapter": "36",
       "verse": "22",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 36:22"
     },
     {
       "book": "helaman",
       "chapter": "12",
       "verse": "15",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Helaman 12:15"
     },
     {
       "book": "3nephi",
       "chapter": "11",
       "verse": "5",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "3Nephi 11:5"
     }
   ],
   "fog": [
@@ -118,37 +136,43 @@
       "book": "1nephi",
       "chapter": "8",
       "verse": "23",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "1Nephi 8:23"
     },
     {
       "book": "1nephi",
       "chapter": "12",
       "verse": "17",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "1Nephi 12:17"
     },
     {
       "book": "alma",
       "chapter": "37",
       "verse": "46",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 37:46"
     },
     {
       "book": "isaiah",
       "chapter": "25",
       "verse": "7",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Isaiah 25:7"
     },
     {
       "book": "isaiah",
       "chapter": "60",
       "verse": "2",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Isaiah 60:2"
     },
     {
       "book": "luke",
       "chapter": "1",
       "verse": "79",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Luke 1:79"
     }
   ],
   "rain": [
@@ -156,37 +180,43 @@
       "book": "john",
       "chapter": "4",
       "verse": "14",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "John 4:14"
     },
     {
       "book": "ephesians",
       "chapter": "5",
       "verse": "25",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Ephesians 5:25"
     },
     {
       "book": "titus",
       "chapter": "3",
       "verse": "5",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Titus 3:5"
     },
     {
       "book": "2nephi",
       "chapter": "31",
       "verse": "5",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "2Nephi 31:5"
     },
     {
       "book": "moroni",
       "chapter": "6",
       "verse": "4",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Moroni 6:4"
     },
     {
       "book": "alma",
       "chapter": "7",
       "verse": "14",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 7:14"
     }
   ],
   "snow": [
@@ -194,43 +224,50 @@
       "book": "job",
       "chapter": "37",
       "verse": "6",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Job 37:6"
     },
     {
       "book": "psalms",
       "chapter": "51",
       "verse": "7",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "psalms 51:7"
     },
     {
       "book": "psalms",
       "chapter": "147",
       "verse": "16",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "psalms 147:16"
     },
     {
       "book": "isaiah",
       "chapter": "1",
       "verse": "18",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Isaiah 1:18"
     },
     {
       "book": "isaiah",
       "chapter": "55",
       "verse": "10",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Isaiah 55:10"
     },
     {
       "book": "matthew",
       "chapter": "28",
       "verse": "3",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Matthew 28:3"
     },
     {
       "book": "revelation",
       "chapter": "1",
       "verse": "14",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Revelation 1:14"
     }
   ],
   "thunderstorm": [
@@ -238,37 +275,43 @@
       "book": "psalms",
       "chapter": "29",
       "verse": "3",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "psalms 29:3"
     },
     {
       "book": "job",
       "chapter": "37",
       "verse": "5",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "Job 37:5"
     },
     {
       "book": "revelation",
       "chapter": "4",
       "verse": "5",
-      "volume": "newtestament"
+      "volume": "newtestament",
+      "reference": "Revelation 4:5"
     },
     {
       "book": "1samuel",
       "chapter": "2",
       "verse": "10",
-      "volume": "oldtestament"
+      "volume": "oldtestament",
+      "reference": "1Samuel 2:10"
     },
     {
       "book": "alma",
       "chapter": "11",
       "verse": "39",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Alma 11:39"
     },
     {
       "book": "helaman",
       "chapter": "12",
       "verse": "13",
-      "volume": "bookofmormon"
+      "volume": "bookofmormon",
+      "reference": "Helaman 12:13"
     }
   ]
 }
