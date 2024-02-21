@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scripture Parser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #input {
+            margin-bottom: 20px;
+        }
+        #output {
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-<textarea id="Scriptures" rows="10" cols="50"></textarea><br>
-<button id="parseButton">Parse Scriptures</button>
+<div id="input">
+    <textarea id="Scriptures" rows="10" cols="50"></textarea><br>
+    <button id="parseButton">Parse Scriptures</button>
+</div>
 <div id="output"></div>
 
 <script>
     const scriptureBooks = [
-        "1 nephi",
-        "2 nephi",
+        "1st nephi",
+        "2nd nephi",
         "jacob",
         "enos",
         "jarom",
@@ -22,13 +54,14 @@
         "mosiah",
         "alma",
         "helaman",
-        "3 nephi",
-        "4 nephi",
+        "3rd nephi",
+        "4th nephi",
         "mormon",
         "ether",
         "moroni"
     ];
     function parseScriptures(inputData) {
+        document.getElementById('input').style.display = 'none';
         const scriptures = [];
         const lines = inputData.split('\n');
         lines.forEach(line => {
@@ -39,7 +72,7 @@
                     book: formattedBook,
                     chapter: parseInt(chapter),
                     verse: parseInt(verse),
-                    reference: `${formattedBook} ${chapter}:${verse}`
+                    reference: `${formattedBook.replace(/\s+/g, '')} ${chapter}:${verse}`
                 });
             }
         });
@@ -48,28 +81,32 @@
     }
 
     function matchBookName(bookName) {
-        for (const book of scriptureBooks) {
-            if (bookName.toLowerCase().includes(book.toLowerCase())) {
-                return book;
-            }
-        }
-        return null;
+        let formattedBookName = bookName.replace(/\b(\d+)(st|nd|rd|th)\b/i, '$1').trim();
+        formattedBookName = formattedBookName.replace(/\s+/g, '')
+        console.log(formattedBookName);
+
+       return formattedBookName.toLowerCase();
     }
+
+
+
+
 
     async function displayScriptures(scriptures) {
         const outputDiv = document.getElementById('output');
-        outputDiv.innerHTML = ''; // Clear previous content
+        outputDiv.innerHTML = '';
+        let scriptureCounter = 0;
         for (const scripture of scriptures) {
             const { book, chapter, verse, reference } = scripture;
             const url = `https://corsproxy.io/?${encodeURIComponent(`https://openscriptureapi.org/api/scriptures/v1/lds/en/volume/bookofmormon/${book}/${chapter}`)}`;
-
+            scriptureCounter += 1;
             try {
                 const response = await fetch(url);
                 const data = await response.json();
                 const verseText = data.chapter.verses[verse - 1].text;
 
                 const h2 = document.createElement('h2');
-                h2.textContent = reference;
+                h2.textContent = `Scripture ${scriptureCounter}). ${reference}`;
 
                 const p = document.createElement('p');
                 p.textContent = verseText;
